@@ -177,11 +177,6 @@ Connection: close
   </body>
 </html>
 ```
-]
-
-
-.footnote[.red[*] HTTP/1.1 and HTTP/2 attempt to re-use connections]
-]
 ---
 .left-column[
   ## What is HTTP?
@@ -195,37 +190,29 @@ A "small block"* of data included in a server's HTTP response that the client sh
   - Includes some cookie attributes
 
 ## Cookie attributes
-- Domain
-- Path
-- Expires
-- Secure
-- HttpOnly
-- SameSite
+
+### [RFC 2109 - Feb 1997](https://datatracker.ietf.org/doc/html/rfc2109)
+  - Domain
+  - Path
+  - Expires
+  - Secure
+
+### [RFC 6265 - Apr 2011](https://datatracker.ietf.org/doc/html/rfc6265)
+  - HttpOnly
+  - SameSite
+]
+
+.left-column[
 .footnote[.red[*] wikipedia used the phrase "small block of data".  I thought it was cute.]
 ]
 ---
 .left-column[
-  ## What is it?
-  ## Why use it?
+  ## What is HTTP?
+  ## What is a Cookie?
+  ## Legal Issues!
 ]
 .right-column[
-As the slideshow is expressed using Markdown, you may:
-
-- Focus on the content, expressing yourself in next to plain text not worrying what flashy graphics and disturbing effects to put where
-
-As the slideshow is actually an HTML document, you may:
-
-- Display it in any decent browser
-
-- Style it using regular CSS, just like any other HTML content
-
-- Use it offline!
-
-As the slideshow is contained in a plain file, you may:
-
-- Store it wherever you like; on your computer, hosted from your Dropbox, hosted on Github Pages alongside the stuff you're presenting...
-
-- Easily collaborate with others, keeping track of changes using your favourite SCM tool, like Git or Mercurial
+TODO:
 ]
 ---
 template: inverse

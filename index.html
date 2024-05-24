@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="keywords" content="remark,remarkjs,markdown,slideshow,presentation" />
     <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
-    <title>Remark</title>
+    <title>Cookies, by aasch</title>
     <style>
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -233,6 +233,29 @@ A "small block"* of data included in a server's HTTP response that the client sh
   ## What is HTTP?
   ## What is a Cookie?
   ## Legal Issues
+  ## Gotchas
+]
+.right-column[
+- Browser tabs
+- Security
+- Bytes in tubes
+
+???
+- Browser tabs
+  - Cookies are per domain, per browser.  They are tab agnostic!
+    - Demo athenaNet?
+- Security
+  - A cookie that doesn't have HttpOnly can be read and written by javascript!  
+    - An XSS attack or malicious javascript (in a library, for example) could scrape the cookie!
+- Bytes in tubes
+  - All cookies get sent in every request.  
+    - Demo prodsupport cookies
+---
+.left-column[
+  ## What is HTTP?
+  ## What is a Cookie?
+  ## Legal Issues
+  ## Gotchas
   ## Demo!
 ]
 .right-column[
